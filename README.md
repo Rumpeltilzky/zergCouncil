@@ -1,4 +1,6 @@
 # zergCouncil
 This is a small change for the Addon RCLootCouncil only applicable to our guild
 
-~ ES NECESARIO ACTIVAR LA OPCIÓN GUILD NOTES EN INTERFAZ --> ADDONS --> RCLOOTCOUNCIL --> EXTRA UTILITIES
+8.0 - Añadida la función para el cálculo de EPGPS mediante nota de hermandad en la columna de Guild Notes
+
+**Es necesario activar la opción guild notes en INTERFAZ --> ADDONS --> RCLOOTCOUNCIL --> EXTRA UTILITIES
