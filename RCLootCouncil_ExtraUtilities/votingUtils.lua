@@ -739,20 +739,20 @@ function EU.SetCellGuildNote(rowFrame, frame, data, cols, row, realrow, column, 
    frame.noteBtn = f
 end
 function EU.SetEpgpValue(rowFrame, frame, data, cols, row, realrow, column, fShow, table, ...)
-   -- local name = data[realrow].name
-   -- local percent = guildInfo[name][2]
-   -- local ep, gp = percent:match("([^,]+),([^,]+)")
-   -- local val = 0
-   -- ep = tonumber(ep)
-   -- gp = tonumber(gp)
-   -- if ep == 0 or gp == 0 then
-     -- val = "Error -1"
-   -- else
-     -- val = tonumber(ep)/tonumber(gp)
-	 -- val = round(val,2)
-   -- end
-   -- frame.text:SetText(val)
-   -- data[realrow].cols[column].value = val
+   local name = data[realrow].name
+   local percent = guildInfo[name][2]
+   local ep, gp = percent:match("([^,]+),([^,]+)")
+   local val = 0
+   ep = tonumber(ep)
+   gp = tonumber(gp)
+   if ep == 0 or gp == 0 then
+    val = "Error -1"
+   else
+    val = tonumber(ep)/tonumber(gp)
+	val = round(val,2)
+   end
+   frame.text:SetText(val)
+   data[realrow].cols[column].value = val
 end
 
 function round(num, numDecimalPlaces)
