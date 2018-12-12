@@ -745,9 +745,12 @@ function EU.SetEpgpValue(rowFrame, frame, data, cols, row, realrow, column, fSho
    local val = 0
    ep = tonumber(ep)
    gp = tonumber(gp)
-   if ep == 0 or gp == 0 then
+   if ep == 0 then 
     val = "Error -1"
    else
+		if gp < 100 then
+			gp = 100
+		end
     val = tonumber(ep)/tonumber(gp)
 	val = round(val,2)
    end
